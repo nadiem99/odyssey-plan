@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0",
+  "exercise": "odyssey-planning",
+  "createdAt": "2026-05-28T00:00:00Z",
+  "participant": {
+    "name": "Sample Explorer",
+    "context": "Choosing what kind of work and life to prototype after graduation."
+  },
+  "plans": [
+    {
+      "id": "life-1",
+      "promptType": "expected_path",
+      "titleSixWords": "Build public work from private curiosity",
+      "summary": "Continue building a portfolio of writing, tools, and advisory work while taking a high-learning generalist role.",
+      "timeline": [
+        { "year": 0, "milestone": "Clarify the current role search and keep publishing small tools." },
+        { "year": 1, "milestone": "Join a strong team, write weekly, and ship two public projects." },
+        { "year": 2, "milestone": "Own a visible strategy or product surface with measurable outcomes." },
+        { "year": 3, "milestone": "Turn the strongest public work into a focused advisory lane." },
+        { "year": 4, "milestone": "Lead a small team or independent practice around AI-native operations." },
+        { "year": 5, "milestone": "Have a durable body of work and enough demand to choose between employment and independence." }
+      ],
+      "gauges": {
+        "resources": 72,
+        "likeIt": 84,
+        "confidence": 66,
+        "coherence": 78
+      },
+      "questionsRaised": [
+        "Which role gives the best learning surface without consuming all creative energy?",
+        "What public work compounds instead of becoming scattered?"
+      ],
+      "prototypeSteps": {
+        "people": [
+          "Talk to two operators who write publicly while holding demanding roles.",
+          "Interview one independent consultant who started from a public body of work."
+        ],
+        "experiments": [
+          "Run a four-week cadence of one useful artifact per week.",
+          "Offer one lightweight advisory sprint to test demand."
+        ],
+        "reflections": [
+          "Track which work creates energy after the deadline passes.",
+          "Notice whether public accountability feels clarifying or performative."
+        ]
+      }
+    },
+    {
+      "id": "life-2",
+      "promptType": "alternative_path",
+      "titleSixWords": "Learn deeply inside one ambitious company",
+      "summary": "Commit to a single company and use the next five years to become unusually valuable inside one domain.",
+      "timeline": [
+        { "year": 0, "milestone": "Pick two domains worth going deep on and build proof of taste." },
+        { "year": 1, "milestone": "Join a mission-driven company in product, strategy, or operations." },
+        { "year": 2, "milestone": "Become the person trusted with ambiguous cross-functional problems." },
+        { "year": 3, "milestone": "Own a roadmap or operating rhythm that changes company performance." },
+        { "year": 4, "milestone": "Manage a small team and mentor other generalists." },
+        { "year": 5, "milestone": "Hold a senior operating role with deep domain credibility." }
+      ],
+      "gauges": {
+        "resources": 80,
+        "likeIt": 70,
+        "confidence": 74,
+        "coherence": 73
+      },
+      "questionsRaised": [
+        "Which domain would still feel interesting after the novelty fades?",
+        "Would focus feel freeing or too narrow?"
+      ],
+      "prototypeSteps": {
+        "people": [
+          "Talk to a chief of staff who became a domain leader.",
+          "Talk to a product leader at a company with strong internal mobility."
+        ],
+        "experiments": [
+          "Write a one-page strategy memo for two target domains.",
+          "Spend one week reading customer calls or primary research in each domain."
+        ],
+        "reflections": [
+          "Compare the kind of problems that felt worth repeating.",
+          "Notice whether the company context matters more than the role title."
+        ]
+      }
+    },
+    {
+      "id": "life-3",
+      "promptType": "wildcard",
+      "titleSixWords": "Make learning feel like public infrastructure",
+      "summary": "Build a studio around tools, essays, and guided exercises that help ambitious people think better about their lives.",
+      "timeline": [
+        { "year": 0, "milestone": "Prototype one guided exercise and share it with a small group." },
+        { "year": 1, "milestone": "Launch a small library of personal strategy tools and publish the thinking behind them." },
+        { "year": 2, "milestone": "Run cohorts or workshops around the most useful frameworks." },
+        { "year": 3, "milestone": "Partner with schools, founders, or communities to adapt the tools." },
+        { "year": 4, "milestone": "Build a small team that turns reading into practical decision systems." },
+        { "year": 5, "milestone": "Operate a trusted learning studio with products, writing, and live experiences." }
+      ],
+      "gauges": {
+        "resources": 58,
+        "likeIt": 92,
+        "confidence": 48,
+        "coherence": 82
+      },
+      "questionsRaised": [
+        "Can this become a real business without diluting the craft?",
+        "Which audience has the strongest pull for this work?"
+      ],
+      "prototypeSteps": {
+        "people": [
+          "Talk to a cohort-based course creator.",
+          "Talk to someone who runs a tools-for-thinking product."
+        ],
+        "experiments": [
+          "Run a beta Odyssey Planning session with five people.",
+          "Publish one artifact and measure whether people actually complete it."
+        ],
+        "reflections": [
+          "Watch for the difference between applause and behavior change.",
+          "Ask whether the work feels more alive when it is intimate or scalable."
+        ]
+      }
+    }
+  ],
+  "synthesis": {
+    "commonThreads": [
+      "Public work and private reflection both matter.",
+      "The strongest futures combine writing, tools, and helping people make decisions."
+    ],
+    "tensions": [
+      "Depth inside one institution versus breadth across many experiments.",
+      "Stable learning surface versus entrepreneurial freedom."
+    ],
+    "nextExperiments": [
+      "Run one guided Odyssey Planning session with a real user.",
+      "Interview three people living different versions of these futures."
+    ],
+    "reflectionPrompts": [
+      "Which plan creates the most energy before it has status?",
+      "What would I regret not testing in the next thirty days?"
+    ]
+  }
+}

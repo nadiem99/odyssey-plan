@@ -1,0 +1,4 @@
+interface:
+  display_name: "Life Design Frameworks"
+  short_description: "Guide life exercises into private artifacts."
+  default_prompt: "Guide me through Odyssey Planning and generate an HTML artifact."
