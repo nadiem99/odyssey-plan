@@ -1,6 +1,6 @@
 # Odyssey Plan Skill
 
-Odyssey Plan Skill is a Codex skill for guiding someone through Odyssey Planning and turning their answers into a private, portable Future Atlas.
+Odyssey Plan Skill is a Codex skill for guiding someone through the Odyssey Plan exercise from the book Designing Your Life and turning their answers into a private, portable Future Atlas.
 
 Odyssey Planning is useful because it breaks the illusion that there is one correct path to find. Instead, it asks you to make three meaningfully different five-year futures concrete enough to compare, discuss, test, and revise.
 
