@@ -1,20 +1,22 @@
-# Life Design Frameworks
+# Odyssey Plan Skill
 
-Life Design Frameworks is a Codex skill for turning reflective book and article exercises into private, portable artifacts people can actually revisit.
+Odyssey Plan Skill is a Codex skill for guiding someone through Odyssey Planning and turning their answers into a private, portable Future Atlas.
 
-The first supported exercise is Odyssey Planning from *Designing Your Life*. The skill guides someone through three possible five-year futures, captures their answers as structured JSON, and renders a polished self-contained HTML artifact called a Future Atlas.
+Odyssey Planning is useful because it breaks the illusion that there is one correct path to find. Instead, it asks you to make three meaningfully different five-year futures concrete enough to compare, discuss, test, and revise.
 
 ## Why This Exists
 
-Many reflective exercises are powerful in the moment and then disappear into a notebook, PDF, chat thread, or forgotten document. That makes them hard to update, compare, share, or build on later.
+Most reflective exercises feel powerful while you are doing them and then disappear into a notebook, PDF, chat thread, or forgotten document. That makes the work hard to revisit. It also makes it harder to notice patterns across time.
 
-This skill is meant to make those exercises more durable. It gives people a way to turn messy thinking into a living artifact they can keep locally, edit over time, and use as a source of self-knowledge.
+This skill is meant to make Odyssey Planning durable. Codex coaches the conversation, captures the answers as structured JSON, and creates a polished HTML artifact that someone can keep locally, share with trusted people, print, and edit later.
 
-The goal is not to pick the one correct life path. It is to make multiple plausible futures concrete enough to discuss, test, and revise.
+The point is not to choose the perfect life immediately. The point is to turn possible futures into something visible enough to prototype.
 
 ## What It Produces
 
-For Odyssey Planning, the output is a Future Atlas:
+The output is a self-contained Future Atlas HTML file plus a portable JSON file.
+
+The Future Atlas includes:
 
 - three distinct five-year futures
 - year `0` through `5` route-style timelines
@@ -24,7 +26,7 @@ For Odyssey Planning, the output is a Future Atlas:
 - people to talk to, small experiments, and reflection prompts
 - a synthesis of common threads, tensions, and next experiments
 
-The generated HTML is self-contained and works without a server or network connection. It includes the full atlas as static HTML first, then adds an optional editor drawer for local edits, JSON import/export, reset, and print.
+The HTML file works without a server or network connection. It includes the full atlas as static HTML first, then adds an optional editor drawer for local edits, JSON import/export, reset, and print.
 
 ## Install In Codex
 
@@ -38,7 +40,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 
 Restart Codex after installation so the skill is picked up.
 
-Then ask Codex something like:
+Then ask Codex:
 
 ```text
 Guide me through Odyssey Planning and generate a Future Atlas HTML artifact.
@@ -65,12 +67,12 @@ The skill is local-first. It does not require accounts, a backend, or cloud stor
 
 Do not include private generated outputs in the repo. The `out/` directory is ignored by git.
 
-## Validate
+## Validation
 
 Run:
 
 ```bash
-python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py /path/to/this/repo
 python3 scripts/test_render_odyssey.py
 ```
 
