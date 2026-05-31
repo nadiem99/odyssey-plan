@@ -99,7 +99,10 @@ The renderer expects this shape:
 The generated HTML should:
 
 - Render without network access.
-- Embed the initial JSON.
-- Save edits to localStorage.
-- Offer JSON export and import.
-- Show all three plans, a year-by-year timeline, four gauges, questions, prototype steps, and synthesis.
+- Use the Future Atlas design: a polished read-first artifact with a hero, route comparison, three future routes, and synthesis.
+- Include static HTML for all visible atlas content before the JavaScript bundle, so the plan remains visible if JavaScript or localStorage fails.
+- Embed the initial JSON for editing, export, import, and reloads.
+- Save edits to localStorage when available, while still allowing the user to export JSON if localStorage is blocked.
+- Offer JSON export and import from the editor drawer.
+- Show all three plans, year `0` through `5` route waypoints, accurate horizontal gauge bars, questions, prototype steps, and synthesis.
+- Avoid separate Sleek/Storyboard modes, clock/dial gauges, notebook lines, worksheet-style visuals, decorative stickers, and DYL branding/assets.

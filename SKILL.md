@@ -1,13 +1,13 @@
 ---
 name: life-design-frameworks
-description: Guide reflective life-design frameworks and reading exercises into private, portable artifacts. Use when the user wants to work through Odyssey Planning, Designing Your Life exercises, career/life reflection frameworks, or book/article exercises and generate structured JSON plus a self-contained HTML visualization they can save and revisit.
+description: Guide reflective life-design frameworks and reading exercises into private, portable Future Atlas artifacts. Use when the user wants to work through Odyssey Planning, Designing Your Life exercises, career/life reflection frameworks, or book/article exercises and generate structured JSON plus a polished self-contained HTML artifact they can save, edit, print, and share.
 ---
 
 # Life Design Frameworks
 
 ## Overview
 
-Use this skill to coach a user through a reflective exercise, capture their answers as structured data, and generate a private artifact they can keep locally. Start with Odyssey Planning; add future exercises by creating new references and renderer templates without changing the overall workflow.
+Use this skill to coach a user through a reflective exercise, capture their answers as structured data, and generate a private artifact they can keep locally. Start with Odyssey Planning, which renders as a polished Future Atlas: a read-first, shareable map of possible futures with route-style timelines, comparison bars, synthesis, and a quiet editor drawer. Add future exercises by creating new references and renderer templates without changing the overall workflow.
 
 ## Workflow
 
@@ -22,7 +22,7 @@ Use this skill to coach a user through a reflective exercise, capture their answ
 python3 scripts/render_odyssey.py input.json --out ./out
 ```
 
-7. Open or inspect the generated HTML when possible. Verify it renders, autosaves edits in localStorage, and exports/imports JSON.
+7. Open or inspect the generated HTML when possible. Verify the atlas content is present in static HTML before JavaScript runs, the editor drawer opens, edits autosave when localStorage is available, and JSON export/import still works.
 8. Return the generated file paths and a short note on how the user can continue the exercise.
 
 ## Odyssey Planning Rules
@@ -34,11 +34,20 @@ python3 scripts/render_odyssey.py input.json --out ./out
 - Capture questions raised and prototype steps: people to talk to, small experiments, and reflection prompts.
 - Synthesize common threads, tensions, and likely next experiments across all three plans.
 
+## Future Atlas Output
+
+- Use the renderer's single Future Atlas design as the default Odyssey artifact.
+- The page should be read-first and shareable: hero, route comparison, three future routes, and synthesis.
+- Use route marks, year waypoints, color-coded paths, and accurate horizontal gauge bars.
+- Keep editing secondary in the drawer tabs: Context, Life 1, Life 2, Life 3, and Synthesis.
+- Do not reintroduce separate Sleek/Storyboard modes, clock/dial gauges, notebook lines, or decorative stickers.
+- Keep the artifact static-first: the complete atlas must be visible even if JavaScript or localStorage fails.
+
 ## Privacy And Portability
 
 - Prefer local files over cloud persistence.
 - Generate a portable JSON file for reloading or editing later.
-- Generate a self-contained HTML file with embedded data and no network dependencies.
+- Generate a self-contained HTML file with embedded data, static atlas markup, and no network dependencies.
 - Do not include copyrighted worksheet visuals, third-party logos, or long verbatim source passages in generated artifacts.
 
 ## Resources

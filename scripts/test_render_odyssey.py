@@ -39,10 +39,24 @@ class OdysseyRendererTests(unittest.TestCase):
 
             self.assertEqual(rendered_json["exercise"], "odyssey-planning")
             self.assertEqual([plan["id"] for plan in rendered_json["plans"]], ["life-1", "life-2", "life-3"])
+            self.assertIn("Future Atlas", rendered_html)
+            self.assertIn("edit-drawer", rendered_html)
+            self.assertIn("Compare the routes", rendered_html)
+            self.assertIn("route-waypoints", rendered_html)
+            self.assertIn("data-gauge-bar", rendered_html)
             self.assertIn("localStorage", rendered_html)
             self.assertIn("Export JSON", rendered_html)
             self.assertIn("Import JSON", rendered_html)
             self.assertIn("Build public work from private curiosity", rendered_html)
+            self.assertLess(
+                rendered_html.index("Build public work from private curiosity"),
+                rendered_html.index('<script id="initial-data"'),
+            )
+            self.assertNotIn("Storyboard", rendered_html)
+            self.assertNotIn("Sleek", rendered_html)
+            self.assertNotIn("data-dial", rendered_html)
+            self.assertNotIn("doodle", rendered_html.lower())
+            self.assertNotIn("viewKey", rendered_html)
 
     def test_rejects_missing_plans(self) -> None:
         data = load_sample()
